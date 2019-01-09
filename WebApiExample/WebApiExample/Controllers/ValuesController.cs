@@ -14,14 +14,14 @@ namespace WebApiExample.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "valueAA", "valueBB" };
+            return new string[] { "valueA", "valueB" };
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "valueAABB";
+            return "valueAB";
         }
 
         // POST api/values
